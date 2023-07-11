@@ -1,0 +1,67 @@
+{
+  "name": "uni-preset-vue",
+  "version": "0.0.1",
+  "scripts": {
+    "dev:h5": "uni --mode development",
+    "dev:app": "uni -p app-android --mode development",
+    "build:h5:pro": "uni build --mode production",
+    "build:h5:test": "uni build --mode test",
+    "build:app:pro": "uni build -p app-android --mode production",
+    "build:app:test": "uni build -p app-android --mode test",
+    "husky": "husky install",
+    "commit": "npx cz-customizable",
+    "release": "npx release-it --config ./config/.release-it.js"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-3080420230531001",
+    "@dcloudio/uni-app-plus": "3.0.0-3080420230531001",
+    "@dcloudio/uni-components": "3.0.0-3080420230531001",
+    "@dcloudio/uni-h5": "3.0.0-3080420230531001",
+    "@dcloudio/uni-mp-alipay": "3.0.0-3080420230531001",
+    "@dcloudio/uni-mp-baidu": "3.0.0-3080420230531001",
+    "@dcloudio/uni-mp-jd": "3.0.0-3080420230531001",
+    "@dcloudio/uni-mp-kuaishou": "3.0.0-3080420230531001",
+    "@dcloudio/uni-mp-lark": "3.0.0-3080420230531001",
+    "@dcloudio/uni-mp-qq": "3.0.0-3080420230531001",
+    "@dcloudio/uni-mp-toutiao": "3.0.0-3080420230531001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-3080420230531001",
+    "@dcloudio/uni-quickapp-webview": "3.0.0-3080420230531001",
+    "vue": "^3.2.45",
+    "vue-i18n": "^9.1.9"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@dcloudio/types": "^3.3.2",
+    "@dcloudio/uni-automator": "3.0.0-3080420230531001",
+    "@dcloudio/uni-cli-shared": "3.0.0-3080420230531001",
+    "@dcloudio/uni-stacktracey": "3.0.0-3080420230531001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-3080420230531001",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "commitizen": "^4.2.4",
+    "commitlint-config-cz": "^0.13.3",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^8.1.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.6",
+    "prettier": "^2.4.1",
+    "release-it": "^15.11.0",
+    "sass": "^1.63.6",
+    "stylelint": "^15.9.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-config-standard-scss": "^9.0.0",
+    "stylelint-order": "^6.0.3",
+    "vite": "4.1.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./config/.cz-config.js"
+    }
+  }
+}
